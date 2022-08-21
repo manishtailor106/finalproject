@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 app = Flask(__name__)   
-model=pickle.load(open('amazon-review.pkl','rb'))
+model=pickle.load(open('model_pickle.pkl','rb'))
 
 from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer(max_features = 2500)
